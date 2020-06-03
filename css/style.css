@@ -18,7 +18,12 @@ body {
 #card, #card-front, #card-inside {
   height: 580px;
 }
-
+.img {
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    background-image: url('file.jpg');
+}
 .wrap {
   padding: 1.5em 2.5em;
   height: 100%;
