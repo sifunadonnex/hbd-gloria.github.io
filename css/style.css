@@ -4,7 +4,12 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
-
+.img {
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    background-image: url('css/file.jpg');
+}
 body {
   background: #E5E5E5;
   background-image: url("bg.jpg");
