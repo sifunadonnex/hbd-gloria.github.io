@@ -18,12 +18,7 @@ body {
 #card, #card-front, #card-inside {
   height: 580px;
 }
-.img {
-    overflow: hidden;
-    background-size: cover;
-    background-position: center;
-    background-image: url('file.jpg');
-}
+
 .wrap {
   padding: 1.5em 2.5em;
   height: 100%;
@@ -382,8 +377,8 @@ font-family: 'Lobster', cursive;
 }
 
 .polaroid {
-  width: 300x;
-  height: 300px;
+  width: 240x;
+  height: 220px;
   position: absolute;
   float: left;
   background: #1e1c18;
@@ -398,8 +393,23 @@ font-family: 'Lobster', cursive;
   -webkit-transform: rotate(-5deg);
           transform: rotate(-5deg);
   clear: both;
-  
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
 }
+.polaroid img,
+.polaroid .img {
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  background-position: center;
+  background-size: cover;
+  -webkit-animation: fade-in 20s ease-in;
+          animation: fade-in 20s ease-in;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+}
+
 @-webkit-keyframes fade-in {
   from {
     opacity: 0;
