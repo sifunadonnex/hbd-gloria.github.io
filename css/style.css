@@ -12,16 +12,12 @@
 }
 body {
   background: #E5E5E5;
-}
-.bg-image {
   background-image: url("css/bg.jpg");
-  background-color: #cccccc;
-  height: 500px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  }
+}
 
 #card-front {
   color: #FFDFDF;
