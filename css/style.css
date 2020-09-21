@@ -13,10 +13,8 @@
 body {
   background: #E5E5E5;
   background-image: url("css/bg.jpg");
-  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  position: relative;
 }
 
 #card-front {
